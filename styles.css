@@ -24,7 +24,6 @@ header {
 
 .nav-container {
     width: 70%;
-
     display: flex; 
     justify-content: space-evenly;
     align-items: center;
@@ -90,11 +89,10 @@ header {
     padding: 15px 35px;
     background-color: white;
     border: 1px solid black;
-}
-
-.tagline button {
     text-transform: uppercase;
 }
+
+    
 
 
 /* Main section*/
@@ -162,7 +160,6 @@ main {
     transform: translateX(-33%);
     padding-bottom: 35px;
     padding-top: 150px;
-
 }
 
 .midline :nth-child(3) {
@@ -231,7 +228,7 @@ main {
     text-align: center;
     list-style: none;
     display: inline-block;
-    width: 32%;
+    width: 33%;
     
 }
 
@@ -282,7 +279,8 @@ main {
     padding-bottom: 150px;
 }
 
-.skills .readmore {
+ /* blog button */
+.skills .readmore { 
     margin: 0 auto;
     margin-top: 50px;
     padding: 15px 35px;
@@ -311,7 +309,7 @@ main {
     text-align: center;
     list-style: none;
     display: inline-block;
-    width: 32%;
+    width: 33%;
     
 }
 
@@ -402,4 +400,58 @@ textarea {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     color: #7c7c7c;
+}
+
+/* Animation and some hover changes */
+
+/* Navbar */ 
+
+.item:hover {
+    position: relative;
+    top: 10px;
+    padding-bottom: 18px;
+    color: #1d1d1d;
+    border-bottom: 2px solid #1d1d1d;
+}
+
+/* Header */
+
+.tagline .readmore:hover {
+    background: #1d1d1d;
+    color: #fff;
+}
+
+/* I need do something with this images line */
+
+.midline img {
+    cursor: pointer;
+    
+}
+
+/* Social buttons */
+
+.social button i:hover {
+    color: #1d1d1d;
+}
+
+/* Team imgs */
+
+.team-list ul li img:hover {
+    opacity: 0.9;
+}
+
+/* Blog button */
+
+.skills .readmore:hover {
+    border: 1px solid #fff;
+    background-color: #1d1d1d;
+    color: #fff;
+}
+
+/* Submit form button */
+
+.submit-button:hover {
+    border: 1px solid black;
+    background: #c8c8c8;
+    color: #1d1d1d;
 }
