@@ -50,25 +50,6 @@ header {
     order: 2;
 }
 
-  /* usage under question */
-  /*
-  @media all and (max-width: 800px) {
-    .container {
-      flex-direction: column;
-      align-items: stretch;
-    }
-    .logo {
-      order: 0;
-      text-align: center;
-      width: 100px;
-      margin: auto auto 20px;
-    }
-    .item {
-      text-align: center;
-      border-bottom: 1px solid #111;
-    }
-  }*/
-
 .tagline {
     display: block;
     padding-top: 350px;
@@ -228,8 +209,7 @@ main {
     text-align: center;
     list-style: none;
     display: inline-block;
-    width: 33%;
-    
+    width: 33%;    
 }
 
 .team .tagline {
@@ -411,7 +391,6 @@ textarea {
     top: 10px;
     padding-bottom: 18px;
     color: #1d1d1d;
-    border-bottom: 2px solid #1d1d1d;
 }
 
 /* Header */
@@ -425,7 +404,6 @@ textarea {
 
 .midline img {
     cursor: pointer;
-    
 }
 
 /* Social buttons */
@@ -454,4 +432,186 @@ textarea {
     border: 1px solid black;
     background: #c8c8c8;
     color: #1d1d1d;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 1250px) {
+
+    .story-2011, .story-2013 {
+        position: relative;
+        left: 50px;
+        padding-left: 0px;
+        padding-right: 70px;
+        padding-bottom: 220px;
+        padding-top: 80px;
+    }
+    
+    .story-2012, .story-2014 {
+        position: relative;
+        right: 20px;
+        padding-right: 10px;
+        padding-left: 60px;
+        padding-bottom: 30px;
+        padding-top: 300px;
+    }
+
+    .midline img {
+        transform: translateX(-36%);
+    }
+    
+    .midline :nth-child(3) {
+        transform: translateX(-44%);
+    }
+
+    .team-list ul {
+        padding: 0;
+    }
+    
+    .team-list ul li:nth-child(2) {
+        top: 0px;
+    }
+    
+    .team-list ul li {
+        padding-top: 25px;
+        display: block;
+        width: 100%;   
+    }
+
+    .provides {
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
+        padding: 0;
+    }
+    
+    .provides ul li {
+        text-align: center;
+        list-style: none;
+        display: block;
+        width: 100%;   
+    }
+    
+    .provides h3, .provides p {
+        width: 90%;
+        margin: 25px auto;
+    }
+
+    .links ul li {
+        text-align: center;
+        list-style: none;
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .links ul li p {
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .navbar {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        background-color: #fff;
+    }
+    
+    .nav-container {
+        width: 95%;
+        display: block; 
+        margin: 0 auto; 
+    }
+    
+    .logo {
+        position: absolute;
+        left: 45%;
+        top: 0px;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .item {
+        position: relative;
+        top: 53px;
+        text-align: center;
+        display: block;
+        border-bottom: 1px solid black;
+        width: 100%;
+        height: 30px;
+        color: #7c7c7c;
+        text-decoration: none;
+        font-family: sans-serif;
+        padding: 0;
+        font-size: 16px;
+        padding-top: 15px;
+    }
+
+    .item:first-child {
+        border-top: 1px solid black;
+    }
+    
+    .item:hover {
+        position: relative;
+        top: 53px;
+        padding-bottom: 0px;
+        color: #1d1d1d;
+    }
+
+    .story-2011 h2, .story-2013 h2 {
+        text-align: right;
+        font-size: 40px;
+        padding: 0;
+        margin: 0;
+        padding-right: 50px;
+    }
+    
+    .story-2012 h2, .story-2014 h2 {
+        padding: 0;
+        margin: 0;
+        font-size: 40px;
+    
+    }
+    
+    .story-2011 p, .story-2013 p {
+        text-align: justify;
+        padding-right: 50px;
+        padding-left: 0px;
+    }
+
+    .midline img {
+        transform: translateX(-43%);
+    }
+    
+    .midline :nth-child(3) {
+        transform: translateX(-47%);
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .story-2011, .story-2013 {
+        position: relative;
+        left: 50px;
+        padding-left: 0px;
+        padding-right: 70px;
+        padding-bottom: 100px;
+        padding-top: 80px;
+    }
+
+    .story-2012, .story-2014 {
+        position: relative;
+        right: 20px;
+        padding-right: 10px;
+        padding-left: 60px;
+        padding-bottom: 0px;
+        padding-top: 300px;
+    }
 }
