@@ -515,6 +515,13 @@ textarea {
 
 @media screen and (max-width: 750px) {
 
+    .tagline {
+        display: block;
+        padding-top: 200px;
+        text-align: center;
+    }
+
+
     .navbar {
         position: relative;
         z-index: 10;
@@ -597,6 +604,7 @@ textarea {
 
 @media screen and (max-width: 600px) {
 
+    
     .story-2011, .story-2013 {
         position: relative;
         left: 50px;
